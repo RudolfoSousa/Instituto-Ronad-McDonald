@@ -1,0 +1,293 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+h1{
+	text-transform: uppercase;
+}
+.flex-box{
+	display: flex;
+	justify-content: space-between;
+	vertical-align: middle;
+}
+.container{
+	width: 75%;
+	margin: 0 auto;
+}
+.content-header{
+	padding: 2rem 0;
+}
+.header-social-medias img{
+	margin-left: .5rem;
+}
+.header-social-medias{
+	margin-bottom: 3rem;
+	margin-left: 20rem;
+}
+.menu-list{
+	display: inline-block;
+	margin-left: 5rem;
+	font-weight: 700;
+}
+.webdoor{
+	position: relative;
+	bottom: -4px;
+}
+.webdoor .container h1{
+	text-shadow: 0px 4px 0px #aaa5a3;
+}
+.webdoor .container h1,
+.webdoor .container p{
+	width: 60%;
+	margin-bottom: 1rem;
+	line-height: 2ch;
+}
+.webdoor .container{
+	position: absolute;
+	left: 13%;
+	width: 85%;
+	top: 40%;
+}
+.webdoor-img{
+	width: 100%;
+}
+.winners,
+.tanks{
+	padding: 3rem 0;
+}
+.winners .container{
+	position: relative;
+}
+.tanks h1{
+	margin-bottom: 1rem;
+	text-shadow: 0 4px 0px #edc702;
+	color: #ffff;
+}
+.tanks p{
+	margin-bottom: 1rem;
+}
+.about-par{
+	width: 50%;
+}
+.winners{
+	background-color: #67d7ff;
+	color: #ffff;
+}
+.winners h1{
+	text-shadow: 0 4px 0px #33baeb;
+}
+.links-winners{
+	margin: 2rem 0;
+}
+.links-winners img{
+	margin: 1rem 0;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.links-winners img{
+	margin-right: 2rem;
+}
+.tanks{
+	background-color: #fed500;
+	padding: 5rem 0;
+}
+img[src="images/map.png"]{
+	position: absolute;
+	right: 15%;
+}
+.media-social-footer img{
+	margin: 2rem .5rem;
+}
+footer{
+	background-color: #e8f0f1;
+	padding: 2rem 0; 
+	text-align: center;
+	font-size: 80%;
+	line-height: 3ch;
+}
+.webdoor-img-mobile{
+	display: none;
+}
+.modal{
+	display: none;
+	background-color: #00afee;
+	width: 100%;
+	padding: 3.5rem 1rem;
+	margin: 0 auto;
+	position: absolute;
+	top: 20%;
+}
+.modal-info{
+	width: 65%;
+}
+.modal-img{
+	width: 15%;
+	border-right: 1px solid #00a0d9;
+}
+.close-modal{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: .8rem;
+	background-color: #00a0d9;
+	cursor: pointer;
+}
+.modal img{
+	cursor: auto; 
+}
+
+/*responsive*/
+@media(max-width: 1282px){
+	.webdoor .container{
+		top: 9%;
+	}
+}
+@media(max-width: 1640px){
+	.tanks .about-par{
+		width: 60%;
+	}
+	.about-par{
+		width: 70%;
+	}
+	.modal-img{
+		width: 20%;
+	}
+}
+@media(max-width: 1144px){
+	.webdoor .container{
+		top: 9%;
+	}
+}
+@media(max-width: 1108px){
+	.tanks .about-par{
+		width: 50%;
+	}
+	.modal-img{
+		width: 25%;
+	}
+}
+@media(max-width: 1081px){
+	.webdoor .container{
+		font-size: 90%;
+	}
+}
+@media(max-width: 974px){
+	.webdoor .container{
+		font-size: 80%;
+	}
+	.modal-img{
+		width: 35%;
+	}
+}
+@media(max-width: 1068px){
+	.header-social-medias{
+		display: none;
+	}
+	.content-header .flex-box{
+		display: block;
+	}
+	.header-images{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.nav-bar{
+		margin: 3rem 0;
+	}
+	.content-header{
+		padding-bottom: 0;
+	}
+	.menu-list{
+		margin-left: 13%;
+	}
+	.links-winners img{
+		margin-right: 1rem;
+	}
+}
+@media(max-width: 921px){
+	.menu-list{
+		margin-left: 10%;
+	}
+	.links-winners img{
+		margin-right: .5rem;
+	}
+}
+@media(max-width: 825px){
+	.webdoor .container{
+		position: relative;
+		width: 75%;
+		left: 0;
+	}
+	.webdoor .container h1,
+	.webdoor .container p{
+		width: 100%;
+		line-height: 3ch;
+	}
+	.webdoor-img{
+		display: none;
+	}
+	.webdoor-img-mobile{
+		display: block;
+		width: 100%;
+	}
+	.tanks .flex-box{
+		display: block;
+	}
+	img[src="images/map.png"]{
+		position: relative;
+		left: 20%;
+	}
+	.tanks .about-par{
+		width: 100%;
+	}
+	.tanks{
+		padding: 2rem 0;
+	}
+	.modal{
+		padding: 0 5rem;
+		width: 50%;
+	}
+	.modal-info{
+		width: 100%;
+	}
+	.modal .flex-box{
+		display: block;
+	}
+	.modal-img{
+		width: 100%;
+		margin: 0 auto;
+		border: 0;
+	}
+	.modal{
+		top: 9%;
+	}
+}
+@media(max-width: 414px){
+	img[src="images/map.png"]{
+		left: 0%;
+	}
+	.menu-list{
+		margin-left: 3%;
+	}
+}
+@media(max-width: 375px){
+	img[src="images/map.png"]{
+		left: 0%;
+	}
+	.menu-list{
+		margin-left: 0%;
+	}
+	.container,
+	.webdoor .container{
+		width: 90%;
+	}
+	.links-winners img{
+		margin-right: 1.5rem;
+	}
+}
+/*responsive*/
